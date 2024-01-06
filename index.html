@@ -16,19 +16,28 @@
 
 </head>
 <body class="">
-<header>
+<header class="bg-primary-softBlue p-mobile-block md:flex md:items-center md:justify-between">
 	<div>
 		<img src="./images/logo.svg" alt="Logo of teh Sunnyside agency landing page">
 	</div>
-	<ul>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Services</a></li>
-		<li><a href="#">Projects</a></li>
-		<li><a href="#">Contact</a></li>
-	</ul>
-	<button type="button">
-		<span class="sr-only">Menu</span>
-	</button>
+	<nav class="relative md:w-[90%] ">
+		<ul class="fixed  flex flex-col  bg-white
+		font-semibold text-2xl space-y-3 triangle md:relative md:flex-row md:h-max md:py-[0.8rem] md:top-[unset] md:left-[unset] md:space-y-0 md:bg-[inherit] md:flex md:justify-end ml-auto" id="nav" data-visible="false">
+			<li class="text-center py-[1rem] md:py-0 md:mr-12 md:text-natural-darkBlue-grayish md:text-xl"><a href="#">About</a></li>
+			<li class="text-center py-[1rem] md:py-0 md:mr-12 md:text-natural-darkBlue-grayish md:text-xl"><a href="#">Services</a></li>
+			<li class="text-center py-[1rem] md:py-0 md:mr-12 md:text-natural-darkBlue-grayish md:text-xl"><a href="#">Projects</a></li>
+			<li class="text-center py-[1rem]  md:py-0 md:text-xl">
+				<a href="#"
+				   class="px-[2rem] py-[0.8rem] bg-primary-yellow rounded-3xl text-natural-darkBlue-desaturated font-fraunces md:py-[0.8rem]">Contact</a>
+			</li>
+		</ul>
+		<button type="button"
+		        class="aspect-[1] bg-button-open w-[30px] bg-contain bg-no-repeat absolute top-[-23px] right-0 md:hidden"
+		        id="nav-btn" aria-controls="nav"
+		        aria-expanded="false">
+			<span class="sr-only">Menu</span>
+		</button>
+	</nav>
 </header>
 
 <main>
@@ -170,6 +179,6 @@
 	</ul>
 </footer>
 
-
+<script src="js/function.js"></script>
 </body>
 </html>

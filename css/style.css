@@ -546,6 +546,32 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.triangle {
+  top: 100px;
+  left: 2rem;
+  width: calc(100% - 4rem);
+  height: 0;
+  overflow-y: hidden;
+}
+
+.triangle[data-visible='true'] {
+  height: 350px;
+  overflow-y: visible;
+}
+
+.triangle::after {
+  --widht: 30px;
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--widht));
+  right: 0;
+  aspect-ratio: 1;
+  width: var(--widht);
+  -webkit-clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  background: inherit;
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -558,17 +584,207 @@ video {
   border-width: 0;
 }
 
+.fixed{
+  position: fixed;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.top-\[-23px\]{
+  top: -23px;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.aspect-\[1\]{
+  aspect-ratio: 1;
+}
+
+.w-\[30px\]{
+  width: 30px;
+}
+
 .grow{
   flex-grow: 1;
 }
 
-.bg-amber-300{
+.flex-col{
+  flex-direction: column;
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
+
+.bg-primary-softBlue{
   --tw-bg-opacity: 1;
-  background-color: rgb(252 211 77 / var(--tw-bg-opacity));
+  background-color: rgb(61 190 255 / var(--tw-bg-opacity));
+}
+
+.bg-primary-yellow{
+  --tw-bg-opacity: 1;
+  background-color: hsl(51 100% 49% / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-button-open{
+  background-image: url('/images/icon-hamburger.svg');
+}
+
+.bg-contain{
+  background-size: contain;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+.p-mobile-block{
+  padding: 2rem;
+}
+
+.px-\[2rem\]{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-\[0\.8rem\]{
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.py-\[1rem\]{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .font-fraunces{
   font-family: Fraunces, serif;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.text-natural-darkBlue-desaturated{
+  --tw-text-opacity: 1;
+  color: hsl(212 27% 19% / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:relative{
+    position: relative;
+  }
+
+  .md\:left-\[unset\]{
+    left: unset;
+  }
+
+  .md\:top-\[unset\]{
+    top: unset;
+  }
+
+  .md\:mr-12{
+    margin-right: 3rem;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
+  .md\:h-max{
+    height: -moz-max-content;
+    height: max-content;
+  }
+
+  .md\:w-\[90\%\]{
+    width: 90%;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:items-center{
+    align-items: center;
+  }
+
+  .md\:justify-end{
+    justify-content: flex-end;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:bg-\[inherit\]{
+    background-color: inherit;
+  }
+
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:py-\[0\.8rem\]{
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-natural-darkBlue-grayish{
+    --tw-text-opacity: 1;
+    color: hsl(213 9% 39% / var(--tw-text-opacity));
+  }
 }
 
 

@@ -4,5 +4,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .triangle {
+        top: 100px;
+        left: 2rem;
+        width: calc(100% - 4rem);
+        height: 0;
+        overflow-y: hidden;
+    }
+
+    .triangle[data-visible='true'] {
+        height: 350px;
+        overflow-y: visible;
+    }
+
+    .triangle::after {
+        --widht: 30px;
+        content: "";
+        position: absolute;
+        top: calc(-1 * var(--widht));
+        right: 0;
+        aspect-ratio: 1;
+        width: var(--widht);
+        clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+        background: inherit;
+    }
+}
+
 
 
