@@ -51,6 +51,14 @@ h1::after {
         clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
         background: inherit;
     }
+
+    .nav-list-btn:hover {
+        background: hsl(0,0%, 100%, 0.23);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(83, 146, 219, 0.13);
+        color: white;
+    }
 }
 
 

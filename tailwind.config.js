@@ -25,6 +25,7 @@ module.exports = {
 		  transform: "#F8EDB2",
 		  standOut : "#FCDBD2",
 		},
+		glassy : "rgba(255, 255, 255, 0.1)",
 	  },
 	  fontFamily        : {
 		barlow  : ["Barlow", "sans-serif"],
@@ -49,7 +50,7 @@ module.exports = {
 		"d-photography"        : "url('/images/desktop/image-photography.jpg')",
 		"d-gallery-cone"       : "url('/images/desktop/image-gallery-cone.jpg')",
 		"d-gallery-milkbottles": "url('/images/desktop/image-gallery-milkbottles.jpg')",
-		"d-gallery-sugarCubes" : "url('/images/desktop/image-gallery-sugar-cubes.jpg')",
+		"d-gallery-sugarCubes" : "url('/images/desktop/image-gallery-sugarcubes.jpg')",
 		"d-gallery-orange"     : "url('/images/desktop/image-gallery-orange.jpg')",
 	  },
 	  padding           : {
@@ -73,6 +74,16 @@ module.exports = {
 	  height            : {
 		presentation: "max(750px, 80vh)",
 	  },
+	  boxShadow: {
+		glassy: "0 4px 30px rgba(0, 0, 0, 0.1)",
+	  },
+	  borderColor: {
+		glassy: "rgba(255, 255, 255, 0.13)",
+	  },
+	  backdropBlur: {
+		glassy: "1.4px",
+	  }
+	  
 	},
   },
   plugins: [],

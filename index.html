@@ -24,15 +24,19 @@
 		<ul class="fixed  flex flex-col  bg-white
 		font-semibold text-2xl space-y-3 triangle md:relative md:flex-row md:h-max md:py-[0.8rem] md:top-[unset] md:left-[unset] md:space-y-0 md:bg-[inherit] md:flex md:justify-end ml-auto md:text-natural-darkBlue-grayish"
 		    id="nav" data-visible="false">
-			<li class="text-center py-[1rem] md:py-0 md:mr-12 md:text-natural-darkBlue-grayish md:text-xl"><a href="#">About</a>
+			<li class="text-center py-[1rem] md:py-0 md:mr-12 md:text-natural-darkBlue-grayish  transition-colors duration-300 ease-in-out md:text-xl md:hover:text-white">
+				<a href="#">About</a>
 			</li>
-			<li class="text-center py-[1rem] md:py-0 md:mr-12 md:text-natural-darkBlue-grayish md:text-xl"><a href="#">Services</a>
+			<li class="text-center py-[1rem] md:py-0 md:mr-12 md:text-natural-darkBlue-grayish  transition-colors duration-300 ease-in-out md:text-xl md:hover:text-white">
+				<a href="#">Services</a>
 			</li>
-			<li class="text-center py-[1rem] md:py-0 md:mr-12 md:text-natural-darkBlue-grayish md:text-xl"><a href="#">Projects</a>
+			<li class="text-center py-[1rem] md:py-0 md:mr-12 md:text-natural-darkBlue-grayish transition-colors duration-300 ease-in-out md:text-xl md:hover:text-white">
+				<a href="#">Projects</a>
 			</li>
 			<li class="text-center py-[1rem]  md:py-0 md:text-xl ">
-				<a href="#"
-				   class="px-[2rem] py-[0.8rem]  rounded-3xl nav-list-btn font-fraunces md:py-[0.8rem] md:bg-white md:text-natural-darkBlue-desaturated">Contact</a>
+				<a href="#" id="nav-inside-btn"
+				   class="px-[2rem] py-[0.8rem]  rounded-3xl nav-list-btn font-fraunces md:py-[0.8rem] md:bg-white md:text-natural-darkBlue-desaturated md:transition-all md:duration-300 md:ease-in-out md:border md:border-solid">
+					Contact</a>
 			</li>
 		</ul>
 		<button type="button"
@@ -62,7 +66,8 @@
 		     class="aspect-[1] w-full  bg-m-transform bg-cover bg-center-bottom md:bg-d-transform md:aspect-[unset] md:col-start-2 md:col-span-1">
 			<span class="sr-only">A photo of an egg laying on the yellow background</span>
 		</div>
-		<article class="p-mobile-block flex justify-center items-center aspect-[1] md:col-start-1 md:row-start-1 md:aspect-[unset]">
+		<article
+				class="p-mobile-block flex justify-center items-center aspect-[1] md:col-start-1 md:row-start-1 md:aspect-[unset]">
 			<div class="lg:w-[80%]">
 				<h2 class="w-[85%] m-auto mb-5  text-4xl text-center font-fraunces text-bold md:mx-0 md:text-left md:mb-8">
 					Transform your brand</h2>
@@ -131,10 +136,12 @@
 	<!--Testimonial section-->
 	<section class="px-mobile-block py-10 lg:px-14 lg:py-[6rem] ">
 
-		<h2 class="text-2xl font-fraunces uppercase tracking-wider text-bold text-center text-natural-grayishBlue">Client testimonials</h2>
+		<h2 class="text-2xl font-fraunces uppercase tracking-wider text-bold text-center text-natural-grayishBlue">
+			Client testimonials</h2>
 		<div class="lg:grid lg:grid-cols-3 lg:gap-x-4">
 			<article class="py-10 ">
-				<img src="./images/image-emily.jpg" alt="Profile image of Emily R." class="w-[80px] aspect-[1] mx-auto mb-5 rounded-full block">
+				<img src="./images/image-emily.jpg" alt="Profile image of Emily R."
+				     class="w-[80px] aspect-[1] mx-auto mb-5 rounded-full block">
 				<p class="text-center text-lg text-primary-darkBlue mb-5 md:max-w-[450px] md:mx-auto lg:w-[80%]">
 					We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were
 					always hit.
@@ -144,7 +151,8 @@
 			</article>
 
 			<article class="py-10">
-				<img src="./images/image-thomas.jpg" alt="Profile image of Thomas S." class="w-[80px] aspect-[1] mx-auto mb-5 rounded-full block">
+				<img src="./images/image-thomas.jpg" alt="Profile image of Thomas S."
+				     class="w-[80px] aspect-[1] mx-auto mb-5 rounded-full block">
 				<p class="text-center text-lg text-primary-darkBlue mb-5 md:max-w-[450px] md:mx-auto lg:w-[80%]">
 					Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying
 					and enjoyable experience.
@@ -154,7 +162,8 @@
 			</article>
 
 			<article class="py-10 ">
-				<img src="./images/image-jennie.jpg" alt="Profile image of Jennie F." class="w-[80px] aspect-[1] mx-auto mb-5 rounded-full block">
+				<img src="./images/image-jennie.jpg" alt="Profile image of Jennie F."
+				     class="w-[80px] aspect-[1] mx-auto mb-5 rounded-full block">
 				<p class="text-center text-lg text-primary-darkBlue mb-5 md:max-w-[450px] md:mx-auto lg:w-[80%]">
 					Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
 					recommended!
@@ -167,43 +176,54 @@
 
 	<!--Gallery section-->
 	<section class="grid grid-cols-2 lg:grid-cols-4">
-		<div role="presentation" class="w-full aspect-[1] bg-m-gallery-milkbottles bg-cover bg-center-bottom bg-no-repeat lg:bg-d-gallery-milkbottles">
+		<div role="presentation"
+		     class="w-full aspect-[1] bg-m-gallery-milkbottles bg-cover bg-center-bottom bg-no-repeat lg:bg-d-gallery-milkbottles">
 			<span class="sr-only">A photo of three milk bottle, with blue sky background</span>
 		</div>
-		<div role="presentation" class="w-full aspect-[1] bg-m-gallery-orange bg-cover bg-center-bottom bg-no-repeat lg:bg-d-gallery-orange">
+		<div role="presentation"
+		     class="w-full aspect-[1] bg-m-gallery-orange bg-cover bg-center-bottom bg-no-repeat lg:bg-d-gallery-orange">
 			<span class="sr-only">A photo of tangerine slice half and presented upon a plate</span>
 		</div>
-		<div role="presentation" class="w-full aspect-[1] bg-m-gallery-cone bg-cover bg-center-bottom bg-no-repeat lg:bg-d-gallery-cone">
+		<div role="presentation"
+		     class="w-full aspect-[1] bg-m-gallery-cone bg-cover bg-center-bottom bg-no-repeat lg:bg-d-gallery-cone">
 			<span class="sr-only">A photo of a ice-cream cone with blue background</span>
 		</div>
-		<div role="presentation" class="w-full aspect-[1] bg-m-gallery-sugarCubes bg-cover bg-center-bottom bg-no-repeat lg:bg-d-gallery-sugarCubes">
+		<div role="presentation"
+		     class="w-full aspect-[1] bg-m-gallery-sugarCubes bg-cover bg-center-bottom bg-no-repeat lg:bg-d-gallery-sugarCubes">
 			<span class="sr-only">A photo of marsh mellow forming a tower with pinky-red background</span>
 		</div>
 	</section>
 
 </main>
 
-<footer>
-	<div>
-		<img src="./images/logo.svg" alt="Logo of the Sunnyside agency landing page">
+<footer class="py-10 px-mobile-block bg-primary-darkCyan-moderate lg:py-[6rem]">
+	<div class="grayscale mb-10">
+		<img src="./images/logo.svg" alt="Logo of the Sunnyside agency landing page"
+		     class="w-[240px] block mx-auto  brightness-[40%] ">
 	</div>
-	<ul>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Services</a></li>
-		<li><a href="#">Projects</a></li>
+	<ul class="max-w-[540px] w-full mx-auto flex justify-between ">
+		<li><a href="#"
+		       class="text-lg text-natural-darkBlue-grayish font-semibold transition-colors duration-300 ease-in-out hover:text-white">About</a>
+		</li>
+		<li><a href="#"
+		       class="text-lg text-natural-darkBlue-grayish font-semibold transition-colors duration-300 ease-in-out hover:text-white">Services</a>
+		</li>
+		<li><a href="#"
+		       class="text-lg text-natural-darkBlue-grayish font-semibold transition-colors duration-300 ease-in-out hover:text-white">Projects</a>
+		</li>
 	</ul>
 
-	<ul>
-		<li>
+	<ul class="w-full max-w-[540px] mx-auto mt-[6rem] flex justify-center gap-x-8 *:text-2xl">
+		<li class="transition-colors text-natural-darkBlue-desaturated duration-300 ease-in-out hover:text-white">
 			<a href=""><i class="fa-brands fa-facebook"></i></a>
 		</li>
-		<li>
+		<li class="transition-colors text-natural-darkBlue-desaturated duration-300 ease-in-out hover:text-white">
 			<a href=""><i class="fa-brands fa-instagram"></i></a>
 		</li>
-		<li>
+		<li class="transition-colors text-natural-darkBlue-desaturated duration-300 ease-in-out hover:text-white">
 			<a href=""><i class="fa-brands fa-twitter"></i></a>
 		</li>
-		<li>
+		<li class="transition-colors text-natural-darkBlue-desaturated duration-300 ease-in-out hover:text-white">
 			<a href=""><i class="fa-brands fa-pinterest"></i></a>
 		</li>
 	</ul>
