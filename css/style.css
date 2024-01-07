@@ -553,6 +553,7 @@ video {
   height: 0;
   overflow-y: hidden;
   transition: all 0.5s ease;
+  z-index: 9999;
 }
 
 .triangle > li, .nav-list-btn {
@@ -642,6 +643,10 @@ video {
   aspect-ratio: 1;
 }
 
+.h-\[450px\]{
+  height: 450px;
+}
+
 .w-\[30px\]{
   width: 30px;
 }
@@ -678,8 +683,24 @@ video {
   background-image: url('/images/icon-hamburger.svg');
 }
 
+.bg-m-header{
+  background-image: url('/images/mobile/image-header.jpg');
+}
+
 .bg-contain{
   background-size: contain;
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-center-bottom{
+  background-position: center bottom;
 }
 
 .bg-no-repeat{
@@ -718,8 +739,71 @@ video {
   line-height: 2rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.font-black{
+  font-weight: 900;
+}
+
 .font-semibold{
   font-weight: 600;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+h1::after {
+  content: url("../images/icon-arrow-down.svg") !important;
+}
+
+.after\:absolute::after{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:left-1\/2::after{
+  content: var(--tw-content);
+  left: 50%;
+}
+
+.after\:top-\[20vh\]::after{
+  content: var(--tw-content);
+  top: 20vh;
+}
+
+.after\:block::after{
+  content: var(--tw-content);
+  display: block;
+}
+
+.after\:h-fit::after{
+  content: var(--tw-content);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.after\:w-\[50px\]::after{
+  content: var(--tw-content);
+  width: 50px;
+}
+
+.after\:-translate-x-1\/2::after{
+  content: var(--tw-content);
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 768px){
@@ -745,6 +829,10 @@ video {
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:h-\[40vh\]{
+    height: 40vh;
   }
 
   .md\:h-max{
@@ -787,6 +875,10 @@ video {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
+  .md\:bg-d-header{
+    background-image: url('/images/desktop/image-header.jpg');
+  }
+
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -810,6 +902,27 @@ video {
   .md\:text-natural-darkBlue-grayish{
     --tw-text-opacity: 1;
     color: hsl(213 9% 39% / var(--tw-text-opacity));
+  }
+
+  .md\:after\:top-\[12vh\]::after{
+    content: var(--tw-content);
+    top: 12vh;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:h-\[70vh\]{
+    height: 70vh;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:after\:top-\[15vh\]::after{
+    content: var(--tw-content);
+    top: 15vh;
   }
 }
 
