@@ -15,7 +15,7 @@
 
 
 </head>
-<body class="">
+<body class="font-barlow">
 <header class="bg-primary-softBlue p-mobile-block md:flex md:items-center md:justify-between">
 	<div>
 		<img src="./images/logo.svg" alt="Logo of teh Sunnyside agency landing page">
@@ -47,7 +47,8 @@
 <main>
 
 	<!--Hero section-->
-	<section class="bg-m-header bg-center bg-cover h-[450px] bg-center-bottom md:bg-d-header md:h-min-[500px] md:h-[40vh]  lg:h-[70vh]">
+	<section
+			class="bg-m-header bg-center bg-cover h-[450px] bg-center-bottom md:bg-d-header md:h-min-[500px] md:h-[40vh]  lg:h-[70vh]">
 		<h1 class="relative  p-mobile-block text-5xl text-center uppercase font-black font-fraunces text-white tracking-widest
 					after:absolute after:block after:h-fit after:w-[50px] after:top-[20vh] after:left-1/2 after:-translate-x-1/2 md:after:top-[12vh] lg:text-6xl lg:after:top-[15vh]">
 			We are creatives
@@ -57,50 +58,64 @@
 
 	<!--CTA section-->
 	<section>
-		<div role="presentation">
+		<div role="presentation" class="aspect-[1] w-full  bg-m-transform bg-cover bg-center-bottom ">
 			<span class="sr-only">A photo of an egg laying on the yellow background</span>
 		</div>
-		<div>
-			<h2>Transform your brand</h2>
+		<div class="p-mobile-block">
+			<h2 class="w-[85%] m-auto mb-5  text-4xl text-center font-fraunces text-bold">Transform your brand</h2>
 
-			<p>
+			<p class="mb-5 text-lg text-center text-natural-darkBlue-grayish font-semibold">
 				We are a full-service creative agency specializing in helping brands grow fast.
 				Engage your clients through compelling visuals that do most of the marketing for you.
 			</p>
 
-			<button type="button">Learn more</button>
+			<button type="button"
+			        class="w-fit m-auto block relative text-xl uppercase font-black font-fraunces after:absolute after:w-underline after:h-[10px] after:bg-underline-transform after:bottom-0 after:left-underline after:-z-10 after:rounded-3xl after:transition-colors after:duration-300 after:ease-in hover:after:bg-primary-yellow">
+				Learn more
+			</button>
 		</div>
 
-		<div role="presentation">
+		<div role="presentation" class="aspect-[1] w-full bg-m-standOut bg-cover bg-center-bottom">
 			<span class="sr-only">A photo of a pinky-red cup with pink-red background</span>
 		</div>
 
-		<div>
-			<h2>Stand out to the right audience</h2>
+		<div class="p-mobile-block">
+			<h2 class="w-[85%] m-auto mb-5  text-4xl text-center font-fraunces text-bold">Stand out to the right
+			                                                                              audience</h2>
 
-			<p>
+			<p class="mb-5 text-lg text-center text-natural-darkBlue-grayish font-semibold">
 				Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
 				we’ll build and extend your brand in digital places.
 			</p>
 
-			<button>Learn more</button>
+			<button class="w-fit m-auto block relative text-xl uppercase font-black font-fraunces after:absolute after:w-underline after:h-[10px] after:bg-underline-standOut after:bottom-0 after:left-underline after:-z-10 after:rounded-3xl  after:transition-colors after:duration-300 after:ease-in hover:after:bg-primary-SoftRed">
+				Learn more
+			</button>
 		</div>
 
 
-		<div>
-			<h2>Graphic design</h2>
-			<p>
-				Great design makes you memorable. We deliver artwork that underscores your brand message and captures
-				potential clients’ attention.
-			</p>
+		<div class="h-[750px] bg-m-graphicDesign bg-cover bg-center-bottom flex flex-col justify-end">
+			<div class="mb-16 p-mobile-block">
+				<h2 class="mb-5  text-3xl text-bold font-fraunces text-natural-darkBlue-grayish text-center">Graphic
+				                                                                                             design</h2>
+				<p class="text-center font-normal leading-[1.7]">
+					Great design makes you memorable. We deliver artwork that underscores your brand message and
+					captures
+					potential clients’ attention.
+				</p>
+			</div>
 		</div>
 
-		<div>
-			<h2>Photography</h2>
-			<p>
-				Increase your credibility by getting the most stunning, high-quality photos that improve your business
-				image.
-			</p>
+		<div class="h-[750px] bg-m-photography bg-cover bg-center-bottom flex flex-col justify-end">
+			<div class="mb-16 p-mobile-block">
+				<h2 class="mb-5  text-3xl text-bold font-fraunces text-natural-darkBlue-grayish text-center">
+					Photography</h2>
+				<p class="text-center font-normal leading-[1.7]">
+					Increase your credibility by getting the most stunning, high-quality photos that improve your
+					business
+					image.
+				</p>
+			</div>
 		</div>
 	</section>
 

@@ -3,7 +3,7 @@ module.exports = {
   content: ["./index.html", "./js/function.js"],
   theme  : {
 	extend: {
-	  colors         : {
+	  colors            : {
 		primary: {
 		  softBlue: "#3DBEFF",
 		  SoftRed : "hsl(7, 99%, 70%)",
@@ -21,12 +21,16 @@ module.exports = {
 		  },
 		  grayishBlue: "hsl(210, 4%, 67%)",
 		},
+		underline:{
+		  transform: "#F8EDB2",
+		  standOut: "#FCDBD2",
+		}
 	  },
-	  fontFamily     : {
+	  fontFamily        : {
 		barlow  : ["Barlow", "sans-serif"],
 		fraunces: ["Fraunces", "serif"],
 	  },
-	  backgroundImage: {
+	  backgroundImage   : {
 		"button-open"          : "url('/images/icon-hamburger.svg')",
 		"button-arrow"         : "url('/images/icon-arrow-down.svg')",
 		"m-header"             : "url('/images/mobile/image-header.jpg')",
@@ -48,16 +52,19 @@ module.exports = {
 		"d-gallery-sugarCubes" : "url('/images/desktop/image-sugar-cubes.jpg')",
 		"d-gallery-orange"     : "url('/images/desktop/image-orange.jpg')",
 	  },
-	  padding        : {
+	  padding           : {
 		"mobile-block" : "2rem",
 		"mobile-inline": "1rem",
 	  },
-	  width : {
-		"nav-expand" : "calc(100% - 4rem)",
+	  width             : {
+		"underline": "calc(100% + 10px)",
 	  },
 	  backgroundPosition: {
-		"center-bottom" : "center bottom",
-	  }
+		"center-bottom": "center bottom",
+	  },
+	  spacing           : {
+		"underline": "-5px",
+	  },
 	},
   },
   plugins: [],
