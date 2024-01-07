@@ -552,11 +552,37 @@ video {
   width: calc(100% - 4rem);
   height: 0;
   overflow-y: hidden;
+  transition: all 0.5s ease;
+}
+
+.triangle > li, .nav-list-btn {
+  color: transparent;
+  transition: all 0.2s ease;
+  transition-delay: 0.2s
+}
+
+@media (min-width: 768px){
+  .triangle > li, .nav-list-btn{
+    --tw-text-opacity: 1;
+    color: hsl(213 9% 39% / var(--tw-text-opacity));
+  }
 }
 
 .triangle[data-visible='true'] {
-  height: 350px;
+  height: 330px;
   overflow-y: visible;
+}
+
+.triangle[data-visible='true'] > li{
+  --tw-text-opacity: 1;
+  color: hsl(213 9% 39% / var(--tw-text-opacity));
+}
+
+.triangle[data-visible='true'] .nav-list-btn{
+  --tw-bg-opacity: 1;
+  background-color: hsl(51 100% 49% / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(212 27% 19% / var(--tw-text-opacity));
 }
 
 .triangle::after {
@@ -643,11 +669,6 @@ video {
   background-color: rgb(61 190 255 / var(--tw-bg-opacity));
 }
 
-.bg-primary-yellow{
-  --tw-bg-opacity: 1;
-  background-color: hsl(51 100% 49% / var(--tw-bg-opacity));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -699,11 +720,6 @@ video {
 
 .font-semibold{
   font-weight: 600;
-}
-
-.text-natural-darkBlue-desaturated{
-  --tw-text-opacity: 1;
-  color: hsl(212 27% 19% / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){
@@ -766,6 +782,11 @@ video {
     background-color: inherit;
   }
 
+  .md\:bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -779,6 +800,11 @@ video {
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-natural-darkBlue-desaturated{
+    --tw-text-opacity: 1;
+    color: hsl(212 27% 19% / var(--tw-text-opacity));
   }
 
   .md\:text-natural-darkBlue-grayish{

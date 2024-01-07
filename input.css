@@ -11,11 +11,28 @@
         width: calc(100% - 4rem);
         height: 0;
         overflow-y: hidden;
+        transition: all 0.5s ease;
     }
 
+    .triangle > li, .nav-list-btn {
+        color: transparent;
+        transition: all 0.2s ease;
+        transition-delay: 0.2s;
+        @apply md:text-natural-darkBlue-grayish
+    }
+
+
     .triangle[data-visible='true'] {
-        height: 350px;
+        height: 330px;
         overflow-y: visible;
+    }
+
+    .triangle[data-visible='true'] > li {
+        @apply text-natural-darkBlue-grayish;
+    }
+
+    .triangle[data-visible='true'] .nav-list-btn {
+        @apply bg-primary-yellow text-natural-darkBlue-desaturated
     }
 
     .triangle::after {
