@@ -4,7 +4,7 @@ module.exports = {
   theme  : {
 	extend: {
 	  colors            : {
-		primary: {
+		primary  : {
 		  softBlue: "#3DBEFF",
 		  SoftRed : "hsl(7, 99%, 70%)",
 		  yellow  : "hsl(51, 100%, 49%)",
@@ -14,17 +14,17 @@ module.exports = {
 		  },
 		  darkBlue: "hsl(198, 62%, 26%)", // for photography text
 		},
-		natural: {
+		natural  : {
 		  darkBlue   : {
 			desaturated: "hsl(212, 27%, 19%)",
 			grayish    : "hsl(213, 9%, 39%)",
 		  },
 		  grayishBlue: "hsl(210, 4%, 67%)",
 		},
-		underline:{
+		underline: {
 		  transform: "#F8EDB2",
-		  standOut: "#FCDBD2",
-		}
+		  standOut : "#FCDBD2",
+		},
 	  },
 	  fontFamily        : {
 		barlow  : ["Barlow", "sans-serif"],
@@ -61,9 +61,17 @@ module.exports = {
 	  },
 	  backgroundPosition: {
 		"center-bottom": "center bottom",
+		"center-top"   : "center top",
 	  },
 	  spacing           : {
 		"underline": "-5px",
+	  },
+	  gridTemplateRows  : {
+		"featureTablet" : "repeat(3,480px)",
+		"featureDesktop": "repeat(3, 560px)",
+	  },
+	  height            : {
+		presentation: "max(750px, 80vh)",
 	  },
 	},
   },
